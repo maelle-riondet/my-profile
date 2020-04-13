@@ -1,0 +1,133 @@
+/* Colors and fonts */
+
+body {
+	background: rgb(232, 238, 248);
+	margin: 20px auto;
+	color: rgb(30, 30, 30);
+	font-family: Helvetica;
+	font-size: 15px;
+
+}
+
+
+img {
+	width: 20%;
+
+}
+
+h1 {
+	background: white;
+	color: #062F5E;
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	text-align: center;
+	line-height: 0em;
+}
+
+h2 {
+	color: #062F5E;
+	font-family: 'Roboto', sans-serif;
+	font-size: 33px;
+}
+
+h3 {
+
+	color: rgb(30, 30, 30);
+	font-family: 'Bebas Neue', cursive;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+
+}
+
+h4 {
+	color: rgb(30, 30, 30);
+	font-family: Helvetica;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+a {
+	color: #353638;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-size: 40px;
+}
+
+a:hover {
+	color: #062F5E;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 40px;
+}
+
+p {
+	text-align: justify;
+}
+
+/* Custom design with class */
+
+
+.container {
+	width: 1300px;
+	margin: 40px auto;
+}
+
+.card-white {
+	background: white;
+	padding: 10px 30px;
+	margin: 20px 200px;
+	/* Je ne sais pas pourquoi mais si je mets une marge automatique (à la place du 200px), les cartes prennent toute la largeur*/
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	border-radius: 50%;
+}
+
+.shadowed {
+	box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.5)
+}
+
+.list-inline {
+	display: inline;
+	list-style: none;
+	padding-left: 0px;
+	font-size: 40px;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 1200px) {
+
+	/* For a screen < 960px, this CSS will be read */
+	.container {
+		width: 1100px;
+	}
+}
+
+@media (max-width: 950px) {
+
+	/* For a screen < 720px, this CSS will be read */
+	.container {
+		width: 900px;
+	}
+}
+
+@media (max-width: 700px) {
+
+	/* For a screen < 720px, this CSS will be read */
+	.container {
+		width: 700px;
+		margin: none;
+	}
+}
